@@ -38,8 +38,8 @@ public class Object2 {
 	 */
 
 	public void createNewFile() throws IOException {
-		Object1 one = new Object1("TextFile1.txt");
+		Object1 one = new Object1(".//src//main//resources//TextFile1.txt");
 		one.readInFile();
-		one.writeToFile(one.getTextFromFile().toUpperCase(), "TextFile2.txt");
+		one.writeToFile(one.getTextFromFile().toUpperCase(), ".//src//main//resources//TextFile2.txt");
 	}
 }
