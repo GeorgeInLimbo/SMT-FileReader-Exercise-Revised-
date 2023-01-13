@@ -21,7 +21,7 @@ import java.io.IOException;
  * @updates:
  ****/
 
-public class Object1 {
+public class DataStreamManager {
 
 	private String textFromFile;
 	private String fileName;
@@ -31,7 +31,7 @@ public class Object1 {
 	 * 
 	 * @param fileName
 	 */
-	public Object1(String fileName) {
+	public DataStreamManager(String fileName) {
 		this.fileName = fileName;
 	}
 

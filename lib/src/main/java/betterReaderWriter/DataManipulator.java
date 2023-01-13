@@ -17,7 +17,7 @@ import java.io.IOException;
  * @updates:
  ****/
 
-public class Object2 {
+public class DataManipulator {
 
 	/**
 	 * Main method which executes the createNewFile procedure
@@ -26,7 +26,7 @@ public class Object2 {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		Object2 exe = new Object2();
+		DataManipulator exe = new DataManipulator();
 		exe.createNewFile();
 	}
 
@@ -38,7 +38,7 @@ public class Object2 {
 	 */
 
 	public void createNewFile() throws IOException {
-		Object1 one = new Object1("src/main/resources//TextFile1.txt");
+		DataStreamManager one = new DataStreamManager("src/main/resources//TextFile1.txt");
 		one.readInFile();
 		one.writeToFile(one.getTextFromFile().toUpperCase(), "src/main/resources/TextFile2.txt");
 	}
