@@ -17,7 +17,7 @@ import java.io.IOException;
  * @updates:
  ****/
 
-public class DataManipulator {
+public class UpperCaseWriter {
 
 	/**
 	 * Main method which executes the createNewFile procedure
@@ -26,7 +26,7 @@ public class DataManipulator {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		DataManipulator exe = new DataManipulator();
+		UpperCaseWriter exe = new UpperCaseWriter();
 		exe.createNewFile();
 	}
 
@@ -38,7 +38,7 @@ public class DataManipulator {
 	 */
 
 	public void createNewFile() throws IOException {
-		DataStreamManager one = new DataStreamManager("src/main/resources//TextFile1.txt");
+		InfoStreamer one = new InfoStreamer("src/main/resources//TextFile1.txt");
 		one.readInFile();
 		one.writeToFile(one.getTextFromFile().toUpperCase(), "src/main/resources/TextFile2.txt");
 	}
